@@ -48,7 +48,7 @@ function genBookName() {
   const name = inputName.value;
   const month = selectMonth.value;
 
-  const [letter1, letter2] = name;
+  const [letter1, letter2] = name.toLowerCase();
 
   bookName.textContent = `the ${months[month]} of ${letters[letter1]} and ${letters[letter2]}`;
 }
